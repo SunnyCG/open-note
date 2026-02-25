@@ -1,0 +1,59 @@
+{
+  "name": "open-note",
+  "version": "0.1.0",
+  "description": "A cross-platform desktop note-taking application with wiki-style links, inspired by Obsidian",
+  "license": "Apache-2.0",
+  "author": "Sunny Wu <suyang_zer@qq.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/openagentapp/open-note.git"
+  },
+  "homepage": "https://github.com/openagentapp/open-note#readme",
+  "bugs": {
+    "url": "https://github.com/openagentapp/open-note/issues"
+  },
+  "keywords": [
+    "note-taking",
+    "markdown",
+    "wiki",
+    "tauri",
+    "rust",
+    "react",
+    "obsidian-alternative",
+    "desktop-app"
+  ],
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "tauri": "tauri",
+    "lint": "eslint src --ext .ts,.tsx",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "@codemirror/commands": "^6.10.2",
+    "@codemirror/lang-markdown": "^6.5.0",
+    "@codemirror/language": "^6.12.1",
+    "@codemirror/language-data": "^6.5.2",
+    "@codemirror/search": "^6.6.0",
+    "@codemirror/state": "^6.5.4",
+    "@codemirror/theme-one-dark": "^6.1.3",
+    "@codemirror/view": "^6.39.14",
+    "@tauri-apps/api": "^2",
+    "@tauri-apps/plugin-dialog": "^2.6.0",
+    "@tauri-apps/plugin-opener": "^2",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.18",
+    "@tauri-apps/cli": "^2",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@vitejs/plugin-react": "^4.6.0",
+    "tailwindcss": "^4.1.18",
+    "typescript": "~5.8.3",
+    "vite": "^7.0.4"
+  }
+}

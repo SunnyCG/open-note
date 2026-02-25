@@ -1,0 +1,176 @@
+@import "tailwindcss";
+
+/* ============================================
+   Theme System - CSS Variables
+   ============================================ */
+
+:root {
+  /* Background Colors */
+  --bg-primary: #111827;
+  --bg-secondary: #1f2937;
+  --bg-tertiary: #374151;
+
+  /* Text Colors */
+  --text-primary: #f3f4f6;
+  --text-secondary: #d1d5db;
+  --text-muted: #9ca3af;
+
+  /* Border Colors */
+  --border-default: #374151;
+  --border-focus: #3b82f6;
+
+  /* Accent Colors */
+  --accent-primary: #3b82f6;
+  --accent-primary-hover: #2563eb;
+  --accent-danger: #ef4444;
+  --accent-danger-hover: #dc2626;
+  --accent-success: #22c55e;
+  --accent-warning: #eab308;
+
+  /* Editor Colors */
+  --editor-bg: #1f2937;
+  --editor-gutter: #1e293b;
+  --editor-cursor: #f3f4f6;
+  --editor-selection: rgba(59, 130, 246, 0.3);
+  --editor-placeholder: #64748b;
+
+  /* Syntax Highlighting Colors */
+  --syntax-heading1: #f1f5f9;
+  --syntax-heading2: #e2e8f0;
+  --syntax-heading3: #cbd5e1;
+  --syntax-heading4: #94a3b8;
+  --syntax-link: #7dd3fc;
+  --syntax-code: #fbbf24;
+  --syntax-code-bg: rgba(175, 184, 193, 0.15);
+  --syntax-quote: #6366f1;
+  --syntax-quote-bg: rgba(99, 102, 241, 0.05);
+  --syntax-hr: #374151;
+
+  /* Unsaved indicator */
+  --unsaved-dot: #3b82f6;
+}
+
+/* Light Theme */
+[data-theme="light"] {
+  /* Background Colors */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f3f4f6;
+  --bg-tertiary: #e5e7eb;
+
+  /* Text Colors */
+  --text-primary: #111827;
+  --text-secondary: #374151;
+  --text-muted: #6b7280;
+
+  /* Border Colors */
+  --border-default: #d1d5db;
+  --border-focus: #3b82f6;
+
+  /* Accent Colors */
+  --accent-primary: #2563eb;
+  --accent-primary-hover: #1d4ed8;
+  --accent-danger: #dc2626;
+  --accent-danger-hover: #b91c1c;
+  --accent-success: #16a34a;
+  --accent-warning: #ca8a04;
+
+  /* Editor Colors */
+  --editor-bg: #ffffff;
+  --editor-gutter: #f3f4f6;
+  --editor-cursor: #111827;
+  --editor-selection: rgba(59, 130, 246, 0.2);
+  --editor-placeholder: #9ca3af;
+
+  /* Syntax Highlighting Colors */
+  --syntax-heading1: #0f172a;
+  --syntax-heading2: #1e293b;
+  --syntax-heading3: #334155;
+  --syntax-heading4: #475569;
+  --syntax-link: #0284c7;
+  --syntax-code: #b45309;
+  --syntax-code-bg: rgba(175, 184, 193, 0.2);
+  --syntax-quote: #7c3aed;
+  --syntax-quote-bg: rgba(124, 58, 237, 0.05);
+  --syntax-hr: #d1d5db;
+
+  /* Unsaved indicator */
+  --unsaved-dot: #2563eb;
+}
+
+/* ============================================
+   Tailwind v4 Theme Configuration
+   ============================================ */
+
+@theme {
+  /* Background colors */
+  --color-bg-primary: var(--bg-primary);
+  --color-bg-secondary: var(--bg-secondary);
+  --color-bg-tertiary: var(--bg-tertiary);
+
+  /* Text colors */
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+
+  /* Border colors */
+  --color-border-default: var(--border-default);
+  --color-border-focus: var(--border-focus);
+
+  /* Accent colors */
+  --color-accent-primary: var(--accent-primary);
+  --color-accent-primary-hover: var(--accent-primary-hover);
+  --color-accent-danger: var(--accent-danger);
+  --color-accent-danger-hover: var(--accent-danger-hover);
+  --color-accent-success: var(--accent-success);
+  --color-accent-warning: var(--accent-warning);
+
+  /* Editor colors */
+  --color-editor-bg: var(--editor-bg);
+  --color-editor-gutter: var(--editor-gutter);
+  --color-editor-cursor: var(--editor-cursor);
+  --color-editor-selection: var(--editor-selection);
+  --color-editor-placeholder: var(--editor-placeholder);
+
+  /* Syntax colors */
+  --color-syntax-heading1: var(--syntax-heading1);
+  --color-syntax-heading2: var(--syntax-heading2);
+  --color-syntax-heading3: var(--syntax-heading3);
+  --color-syntax-heading4: var(--syntax-heading4);
+  --color-syntax-link: var(--syntax-link);
+  --color-syntax-code: var(--syntax-code);
+  --color-syntax-code-bg: var(--syntax-code-bg);
+  --color-syntax-quote: var(--syntax-quote);
+  --color-syntax-quote-bg: var(--syntax-quote-bg);
+  --color-syntax-hr: var(--syntax-hr);
+
+  /* Unsaved dot */
+  --color-unsaved-dot: var(--unsaved-dot);
+}
+
+/* ============================================
+   Base Styles
+   ============================================ */
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bg-tertiary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
