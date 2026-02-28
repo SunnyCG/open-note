@@ -181,4 +181,4 @@ Inspired by [Obsidian](https://obsidian.md/) - a powerful knowledge base that wo
 
 ---
 
-Made with ❤️ by [Sunny Wu](https://github.com/openagentapp)
+Made with ❤️ by [Sunny Wu](https://github.com/SunnyCG)
